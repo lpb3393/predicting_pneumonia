@@ -32,14 +32,17 @@ Now that the dataset has been prepped, I started the modeling by first running a
 
 The first model I created was a vanilla neural network that used both relu and sigmoid activation. Due to the randomness of neural networks the results varied each time I ran the model but were typically around 70% accuracy and 60% loss. In this case the accuracy was 73% and the loss rate was 61%.
 
+![model1summary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1summary.JPG)
+
+
+![model1](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1.JPG)
+
+
+
 ## Baseline CNN
 
 My second model was a baseline CNN to see how I can improve for the final CNN model. I introduced more layers to the model that ultimately improved the accuracy score. The accuracy for the training set increased to 80%, while the loss also decreased to 42%. On the test set, the accuracy increased to 81% and the loss decreased to 37%. Overall, this model performed much better than the original, so I then moved to data augmentation to further improve the model.
 
-
-![model1summary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1summary.JPG)
-
-![model1](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1.JPG)
 
 ![model2summary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model2summary.JPG)
 
