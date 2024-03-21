@@ -28,7 +28,11 @@ After defining all of the variable names for each folder and getting the image c
 
 The baseline model will provide a starting off point, to which I can improve upon during further tuning of the model. I will first start with a basic neural network and then go into a more complex CNN.
 
+![model1summary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1summary.JPG)
+
 ![model1](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1.JPG)
+
+![model2summary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model2summary.JPG)
 
 ![model2](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model2.JPG)
 
