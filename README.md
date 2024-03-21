@@ -24,9 +24,18 @@ After defining all of the variable names for each folder and getting the image c
 
 ![xrays](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/xrays.JPG)
 
-## Baseline Models
+# Modeling
 
-The baseline model will provide a starting off point, to which I can improve upon during further tuning of the model. I will first start with a basic neural network and then go into a more complex CNN.
+Now that the dataset has been prepped, I started the modeling by first running a baseline vanilla neural network. I wanted to see how the data performed before making any significant changes to the images. I then created a baseline CNN to see how I could improve after data augmentation and prepping for the final model. I metric I felt that was import to use in this study was recall because of the fact that a high recall indicates a low false negative rate, meaning the model is good at catching positive cases, also because of the class imbalanced within the dataset. So for the final model, while looking at the accuracy and the loss rate, recall will also help determine how efficiently the model ran.
+
+## Baseline Neural Network
+
+The first model I created was a vanilla neural network that used both relu and sigmoid activation. Due to the randomness of neural networks the results varied each time I ran the model but were typically around 70% accuracy and 60% loss. In this case the accuracy was 73% and the loss rate was 61%.
+
+## Baseline CNN
+
+My second model was a baseline CNN to see how I can improve for the final CNN model. I introduced more layers to the model that ultimately improved the accuracy score. The accuracy for the training set increased to 80%, while the loss also decreased to 42%. On the test set, the accuracy increased to 81% and the loss decreased to 37%. Overall, this model performed much better than the original, so I then moved to data augmentation to further improve the model.
+
 
 ![model1summary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1summary.JPG)
 
@@ -39,14 +48,14 @@ The baseline model will provide a starting off point, to which I can improve upo
 
 ## Data Augmentation
 
-After artifically expanding the dataset during data augmentation, I will fit the dataset to the final model to hopefully get better results.
+In order to avoid overfitting the model, we need to artificially expand the dataset. We can make the dataset larger by altering the training data with small transformations to reproduce the variations. The data was adjusted by a rotation range of 40, width shift of 0.2, height shift of 0.2, shear range of 0.3, and a zoom range of 0.1. Once the new data has been created, I ran the new dataset in the finall CNN model.
 
 ![dataaug](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/dataaug.JPG)
 
 
 ## Final Model
 
-After artifically expanding the dataset during data augmentation, I will fit the dataset to the final model to hopefully get better results.
+After artifically expanding the dataset during data augmentation, I fit the dataset to the final model and got the best results so far. Even though the loss rate increase to 39%, the accuracy increased significantly to 88%. The weighted average recall score for this model 89%, which means it detected the postive images very well. In the confusion matrix, it's clear to see where it made the prediction and when it was correct. Recall is not only a good metric to use for identifying positive images but also because of the class imbalance in the dataset.
 
 ![modelsummary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/modelsummary.JPG)
 
@@ -63,7 +72,8 @@ After artifically expanding the dataset during data augmentation, I will fit the
 
 # Conclusion
 
-The significant improvement in the CNN accuracy from 81% to 86% after data augmentation indicates a substantial enhancement in the model’s diagnostic capabilities for pneumonia from X-ray images. However, the increase in loss from 37% to 39% suggests that while the model is correctly identifying more cases, it is also making more errors on individual predictions. This could be due to the model becoming more sensitive and thus, more prone to false positives, or it may reflect the increased complexity of the augmented dataset. It’s crucial to analyze the types of errors contributing to the loss to ensure that the model’s improved accuracy translates into reliable and clinically useful predictions. But due to the nature of neural networks, the randomness will cause different results each time the model is run. The range of accuracy for this model has been between 80-88%, while the loss has been ranging from 35-50%.
+The significant improvement in the CNN accuracy ranged from 83% to 88% after data augmentation indicates a substantial enhancement in the model’s diagnostic capabilities for pneumonia from X-ray images. However, the increase in loss from 37% to 39% suggests that while the model is correctly identifying more cases, it is also making more errors on individual predictions. This could be due to the model becoming more sensitive and thus, more prone to false positives, or it may reflect the increased complexity of the augmented dataset. It’s crucial to analyze the types of errors contributing to the loss to ensure that the model’s improved accuracy translates into reliable and clinically useful predictions. But due to the nature of neural networks, the randomness will cause different results each time the model is run. The range of accuracy for the final model has been between 83-88%, while the loss has been ranging from 35-50%.
+
  
 ## Limitations
 
