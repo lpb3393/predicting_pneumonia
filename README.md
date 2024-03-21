@@ -76,7 +76,7 @@ While chest X-rays are clearly a great way to predict pneumonia, they are not th
 
 
 ## For More Information
-See the full analysis in the [Jupyter Notebook](https://github.com/lpb3393/predicting_pneumonia/blob/main/predicting_pneumonia.ipynb) or review the [presentation](https://github.com/lpb3393/predict-flu-vaccine/blob/main/predict-flu-vaccine-presentation.pdf)
+See the full analysis in the [Jupyter Notebook](https://github.com/lpb3393/predicting_pneumonia/blob/main/predicting_pneumonia.ipynb) or review the [presentation](https://github.com/lpb3393/predicting_pneumonia/blob/main/predicting-pneumonia-presentation.pdf)
 
 
 
@@ -85,6 +85,6 @@ See the full analysis in the [Jupyter Notebook](https://github.com/lpb3393/predi
 ├── photos
 ├── .gitignore
 ├── README.md
-├── predict-flu-vaccine-presentation.pdf
-└── predict-flu-vaccines.ipynb
+├── predicting-pneumonia-presentation.pdf
+└── predicting_pneumonia.ipynb
 ```
