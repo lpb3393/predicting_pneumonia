@@ -15,6 +15,8 @@ For the analysis of chest x-ray images, all chest radiographs were initially scr
 
 Data Source: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
+![doctor](https://github.com/lpb3393/predict-flu-vaccine/blob/main/photos/doctor.PNG)
+
 
 ## Data Preparation
 
@@ -33,3 +35,5 @@ The significant improvement in the convolutional neural network’s (CNN) accura
 While convolutional neural networks have shown promise in predicting pneumonia from X-ray images, they do have limitations. One major challenge is the need for large and diverse datasets to train the models effectively; without them, CNNs can suffer from overfitting and may not generalize well to new data. Additionally, CNNs can struggle with subtle features of pneumonia that are not easily distinguishable from other lung conditions, leading to potential misdiagnoses. The interpretation of X-ray images by CNNs also lacks the nuanced understanding that a trained radiologist brings, particularly in complex cases where multiple factors must be considered3. These limitations highlight the importance of using much larger dataset, combining CNNs with expert human analysis and ensuring that the training data is as comprehensive and unbiased as possible.
 
 ## Next Staps
+
+While chest X-rays are clearly a great way to predict pneumonia, they are not the only data type that can be used. CNNs can also be trained on a variety of other data types. For instance, computed tomography (CT) scans provide a more detailed view of the lungs and can potentially reveal more subtle features indicative of pneumonia. Patient metadata, such as age, gender, and underlying health conditions, can also be incorporated into the model to improve its predictive power. Furthermore, audio data from a patient’s cough or breathing can be analyzed using a CNN for pneumonia detection. Therefore, while chest X-rays play a crucial role, the application of CNNs in pneumonia prediction can leverage a wide array of data types for more comprehensive and accurate predictions and in the future, it could be beneficial to use all methods.
