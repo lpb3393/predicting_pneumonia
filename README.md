@@ -15,16 +15,30 @@ For the analysis of chest x-ray images, all chest radiographs were initially scr
 
 Data Source: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
-![doctor](https://github.com/lpb3393/predict-flu-vaccine/blob/main/photos/doctor.PNG)
+![doctor](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/doctor.JPG)
 
 
 ## Data Preparation
 
+
+![xrays](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/xrays.JPG)
+
 ## Baseline Models
+
+
+![model1](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model1.JPG)
+
+![model2](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model2.JPG)
 
 ## Data Augmentation
 
+![dataaug](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/dataaug.JPG)
+
 ## Final Model
+![modelsummary](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/modelsummary.JPG)
+![model3](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/model3.JPG)
+![classificationreport](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/classificationreport.JPG)
+![confusionmatrix](https://github.com/lpb3393/predicting_pneumonia/blob/main/photos/confusionmatrix.JPG)
 
 # Conclusion
 
@@ -37,3 +51,19 @@ While convolutional neural networks have shown promise in predicting pneumonia f
 ## Next Staps
 
 While chest X-rays are clearly a great way to predict pneumonia, they are not the only data type that can be used. CNNs can also be trained on a variety of other data types. For instance, computed tomography (CT) scans provide a more detailed view of the lungs and can potentially reveal more subtle features indicative of pneumonia. Patient metadata, such as age, gender, and underlying health conditions, can also be incorporated into the model to improve its predictive power. Furthermore, audio data from a patient’s cough or breathing can be analyzed using a CNN for pneumonia detection. Therefore, while chest X-rays play a crucial role, the application of CNNs in pneumonia prediction can leverage a wide array of data types for more comprehensive and accurate predictions and in the future, it could be beneficial to use all methods.
+
+
+
+## For More Information
+See the full analysis in the [Jupyter Notebook](https://github.com/lpb3393/predicting_pneumonia/blob/main/predicting_pneumonia.ipynb) or review the [presentation](https://github.com/lpb3393/predict-flu-vaccine/blob/main/predict-flu-vaccine-presentation.pdf)
+
+
+
+
+```
+├── photos
+├── .gitignore
+├── README.md
+├── predict-flu-vaccine-presentation.pdf
+└── predict-flu-vaccines.ipynb
+```
